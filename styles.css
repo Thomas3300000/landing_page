@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background-color: #000000;
+   
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ac1515;
+}
+
+nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #ac1515;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.intro .container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.intro-contenu h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.intro-contenu .description {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+}
+
+.boutons {
+    display: flex;
+    gap: 1rem;
+}
+
+.bouton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.bouton.principal {
+    background-color: #000000;
+    color: #ac1515;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.bouton.principal:hover {
+    background-color: #ac1515;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.intro-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.fonctionnalites {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}
+
+.fonctionnalites h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.grille-fonctionnalites {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.fonctionnalite {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.fonctionnalite img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.a-propos {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.a-propos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.histoire-projet {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.equipe {
+    text-align: center;
+}
+
+.membres-equipe {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.membre h4 {
+    margin-bottom: 0.5rem;
+}
+
+.liens-sociaux a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #3498db;
+}
+
+footer {
+    background-color: #f1f3f5;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .intro .container,
+    .grille-fonctionnalites {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+
+    .membres-equipe {
+        flex-direction: column;
+    }
+}
